@@ -1,4 +1,4 @@
-# Cambridge Tango Labs — Version 4
+# Cambridge Tango Labs — Version 5
 
 This is a static HTML website ready for GitHub Pages or Cloudflare Pages.
 
@@ -8,8 +8,7 @@ This is a static HTML website ready for GitHub Pages or Cloudflare Pages.
 - `about-us.html` — About Us, photos, and **Private and Small Group Classes**
 - `why-tango.html` — Why Tango?
 - `practica.html` — Ayna's five-section Sunday Practica description
-- `other-events.html` — Friday milongas, local event/learning links, 2023 Festivalito archive
-- `festivalito-2023.html` — historical event details
+- `other-events.html` — links to Truly Tango, Tango Theory and CamTango only
 - `classes.html` — redirect for old internal bookmarks (no longer a navigation tab)
 
 All navigation uses explicit `.html` files, which work when opened locally.
@@ -26,11 +25,6 @@ Add your own three local image files inside `assets/`:
 The images are **not** included here, because they weren't attached in this chat.
 
 ## Date note
-
-The most recent Friday milonga date supplied by Ayna was **2 October 2026**.
-Because that date has already passed, the site labels this as a previously
-advertised event. Replace that event card with the next confirmed event when
-its details are available; avoid labelling it as an upcoming event.
 
 The Sunday Practica copy includes the new first-and-third-Sunday schedule,
 2–6pm, with instructions to confirm actual dates on Facebook.
