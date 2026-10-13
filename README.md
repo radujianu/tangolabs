@@ -1,31 +1,42 @@
-# Cambridge Tango Labs — static website (revision 2)
+# Cambridge Tango Labs — Version 4
 
-Updated navigation: **Home · About Us · Why Tango · Classes · Practica · Other Events**.
-The 2023 Festivalito page remains accessible from Other Events, but is no longer a top-level tab.
+This is a static HTML website ready for GitHub Pages or Cloudflare Pages.
 
-## Add your three local images
+## Structure
 
-Drop them into `assets/`:
+- `index.html` — Home, with Sunday Practica link
+- `about-us.html` — About Us, photos, and **Private and Small Group Classes**
+- `why-tango.html` — Why Tango?
+- `practica.html` — Ayna's five-section Sunday Practica description
+- `other-events.html` — Friday milongas, local event/learning links, 2023 Festivalito archive
+- `festivalito-2023.html` — historical event details
+- `classes.html` — redirect for old internal bookmarks (no longer a navigation tab)
 
-- `radusylwiasummervibes.jpg` — About Us
-- `radusylwiaporec.jpg` — About Us
-- `tangolabsbackground.jpg` — photo at the top of each page
+All navigation uses explicit `.html` files, which work when opened locally.
 
-The site also checks for the files **without extensions** and for common alternative extensions (JPEG, PNG, WebP).
-The image binaries are not bundled here; they currently live on your computer.
+## Images
 
-## Preview
+Add your own three local image files inside `assets/`:
 
-Unzip and open `index.html` in a browser, then click the six menu items. No build process, WordPress, database, or server required.
+- `radusylwiasummervibes.jpg`
+- `radusylwiaporec` (with or without a common image extension)
+- `tangolabsbackground` (with or without a common image extension)
 
-For GitHub Pages, place the contents (not the enclosing folder) at the root of a repository and enable Pages → Deploy from branch. Configure `cambridgetangolabs.com` as your custom domain only when ready to switch DNS.
+`site.js` looks for these asset basenames and tries common image extensions.
+The images are **not** included here, because they weren't attached in this chat.
 
-The site only uses local assets, with external links to YouTube, Facebook, and other tango websites. No content references WordPress-hosted images.
+## Date note
 
-## Check current details
+The most recent Friday milonga date supplied by Ayna was **2 October 2026**.
+Because that date has already passed, the site labels this as a previously
+advertised event. Replace that event card with the next confirmed event when
+its details are available; avoid labelling it as an upcoming event.
 
-The existing website described Practica on first, third and fifth Sundays, from 2–5 pm, with a class 2–3 pm. The updated copy preserves those details as the **usual/previously advertised programme**, directing visitors to the Facebook group to confirm dates and venues.
+The Sunday Practica copy includes the new first-and-third-Sunday schedule,
+2–6pm, with instructions to confirm actual dates on Facebook.
 
-The Other Events page no longer presents 2025 event dates as current, and the Festivalito 2023 page is explicitly archived. Verify any schedules and prices before going live.
+## Publishing
 
-The old `/classes-and-events/` address redirects to `/classes/`.
+Put the *contents* of this folder in the root of your GitHub Pages repository.
+No build step or server-side software is required. Hyperlinks to external sites
+are ordinary URLs; links between site pages use relative `.html` paths.
